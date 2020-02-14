@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.cifra{font-family: monospace;color: white;font-size: 45px;padding-top: 20px;}		
+		p{color: white;font-size: 22px;font-family:cursive;font-weight: 400;}
+		.galca1, 
+		.galca2,
+		.galca3,
+		.galca4,
+		.galca5,
+		.galca6,
+		.galca7,
+		.galca8,
+		.galca9,
+		.galca10 {display: none;}
+		.poisk1{width:60px ;height:20px ;position: absolute;margin-left: 710px;margin-top: -145px}
+		.poisk2{width:1100px ;height:300px ;position: absolute;margin-left: 325px;margin-top: -600px}
+		.poisk3{width:100px ;height:50px ;position: absolute; margin-left: 400px;margin-top: -850px }
+		.poisk4{width:25px ;height:75px ;position: absolute; margin-left: 1100px;margin-top: -275px}
+		.poisk5{width:50px ;height:25px ;position: absolute; margin-left: 850px;margin-top: -530px}
+		.poisk6{width:75px ;height:25px ;position: absolute; margin-left: 825px;margin-top: -690px}
+		.poisk7{width:25px ;height:75px ;position: absolute; margin-left: 1305px;margin-top: -200px}
+		.poisk8{width:40px ;height:25px ;position: absolute; margin-left: 380px;margin-top: -290px}
+		.poisk9{width:100px ;height:25px ;position: absolute; margin-left: 600px;margin-top: -90px}
+		.poisk10{width:35px ;height:50px ;position: absolute; margin-left: 280px;margin-top: -110px}		
+	</style>
+</head>
+<body style="background-color: black">
+	<div style="background: url('fon.jpg') ; height: 864px;width:1300px ; background-repeat: no-repeat;margin-left: auto;margin-right: auto;border: 25px solid;">
+		<div style="position: absolute; background-color: ;min-height: 100px;min-width: 130px;left:0px;margin-top: -60px ">
+			<p style="color: orange">Если прямая не касаеться картинки ,попробуйте исправить это маштобираванием ,это на примую зависит на каректность работы.</p>
+			<div style="height: 5px;width: 230px;background-color: orange"></div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Recall</p>
+				<img src="галка.png" class="galca1" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Memore</p>
+				<img src="галка.png" class="galca2" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Case</p>
+				<img src="галка.png" class="galca3" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Shown</p>
+				<img src="галка.png" class="galca4" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px ">
+				<p>Steel</p>
+				<img src="галка.png" class="galca5" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Cricket</p>
+				<img src="галка.png" class="galca6" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px ">
+				<p>Proven</p>
+				<img src="галка.png" class="galca7" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px ">
+				<p>Way</p>
+				<img src="галка.png" class="galca8" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px ">
+				<p>Computer</p>
+				<img src="галка.png" class="galca9" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div style="display: flex;margin-bottom: -20px">
+				<p>Fat</p>
+				<img src="галка.png" class="galca10" style="max-width:25px ;margin-bottom:25px;margin-left: 10px">
+			</div>
+			<div class="number cifra lol"></div>			
+		</div>
+	</div>
+	<div class="poisk1"></div>	
+	<div class="poisk2"></div>
+	<div class="poisk3"></div>
+	<div class="poisk4"></div>
+	<div class="poisk5"></div>
+	<div class="poisk6"></div>
+	<div class="poisk7"></div>
+	<div class="poisk8"></div>
+	<div class="poisk9"></div>
+	<div class="poisk10"></div>	
+	<script type="text/javascript">
+		let scroll =0;
+		document.querySelector('.lol').innerHTML=scroll
+		document.querySelector('.poisk1').onclick=function() {
+			document.querySelector('.poisk1').style.display='none';
+			document.querySelector('.galca1').style.display='block';
+			alert("Молодец");
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}		
+				document.querySelector('.poisk2').onclick=function() {
+			document.querySelector('.poisk2').style.display='none';
+			document.querySelector('.galca2').style.display='block';
+			alert("Хорошо")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk3').onclick=function() {
+			document.querySelector('.poisk3').style.display='none';
+			document.querySelector('.galca3').style.display='block';
+			alert("Как ты это делаешь?")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk4').onclick=function() {
+			document.querySelector('.poisk4').style.display='none';
+			document.querySelector('.galca4').style.display='block';
+			alert("Нормально")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk5').onclick=function() {
+			document.querySelector('.poisk5').style.display='none';
+			document.querySelector('.galca5').style.display='block';
+			alert("Погнали")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk6').onclick=function() {
+			document.querySelector('.poisk6').style.display='none';
+			document.querySelector('.galca6').style.display='block';
+			alert('Что дальше?')
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk7').onclick=function() {
+			document.querySelector('.poisk7').style.display='none';
+			document.querySelector('.galca7').style.display='block';
+			alert("Молодцом")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk8').onclick=function() {
+			document.querySelector('.poisk8').style.display='none';
+			document.querySelector('.galca8').style.display='block';
+			alert("Неплоха")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk9').onclick=function() {
+			document.querySelector('.poisk9').style.display='none';
+			document.querySelector('.galca9').style.display='block';
+			alert("А ты хорош")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}
+					document.querySelector('.poisk10').onclick=function() {
+			document.querySelector('.poisk10').style.display='none';
+			document.querySelector('.galca10').style.display='block';
+			alert("На что ещё ты способен")
+			scroll=scroll+10
+			document.querySelector('.lol').innerHTML=scroll+' балов';}	
+	</script>
+</body>
+</html>
